@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DnD for Russian</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link  rel="icon"  href="https://img.icons8.com/color/40/000000/icosahedron.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <img src="Head.png" alt="Site title"> 
+    </div>
+   
+   <section class="settings">
+        <form action="" method="POST">
+            <input type="text" name="search" id="ser" placeholder="Поиск по названию">
+            <input type="submit" name="search-btn" id="ser-btn">
+        </form>
+        <div class="selecter">
+            <select name="dnd-class" id="">
+                <option value="none" selected >Любой класс</option>    
+                <option value="barbarian"> Варвар </option>
+                <option value="bard"> Бард </option>
+                <option value="cleric"> Жрец </option>
+                <option value="druid"> Друид </option>
+                <option value="fighter"> Воин </option>
+                <option value="monk"> Монах </option>
+                <option value="paladin"> Паладин </option>
+                <option value="ranger"> Рейнджер </option>
+                <option value="rogue"> Вор </option>
+                <option value="wizard"> Волшебник </option>
+                <option value="sorcerer"> Чародей  </option>                      
+            </select>
+            <select name="spel-lvl">
+                <option value="none" selected >Любой уровень</option>     
+                <option value=0> 0 </option>
+                <option value=1> 1 </option>
+                <option value=2> 2 </option>
+                <option value=3> 3 </option>
+                <option value=4> 4 </option>
+                <option value=5> 5 </option>
+                <option value=6> 6 </option>
+                <option value=7> 7 </option>
+                <option value=8> 8 </option>
+                <option value=9> 9 </option>                           
+            </select>
+        </div>
+        <div>
+             <label for="components">Компоненты:</label>
+             <br>
+             <input type="radio" value="with" name="comp-radio" checked> Может требовать
+              <input type="radio" value="without" name="comp-radio"> Исключить
+             <br>
+             <input type="checkbox" name="components" value="V" checked>V
+             <input type="checkbox" name="components" value="M" checked>M
+             <input type="checkbox" name="components" value="S" checked>S
+             <input type="checkbox" name="components" value="F" checked>F/DF
+             <input type="checkbox" name="components" value="XP" checked>XP
+         </div>
+         <!--<div>
+             <label for="school">Школы:</label>
+             <br>
+             <input type="checkbox" name="school" value="V" checked>V
+             <input type="checkbox" name="school" value="M" checked>M
+             <input type="checkbox" name="school" value="S" checked>S
+             <input type="checkbox" name="school" value="F" checked>F/DF
+             <input type="checkbox" name="school" value="XP" checked>XP
+         </div>-->
+       
+       
+    </section>
+    <section class="data-window"> 
+    </section>
+</body>
+
+</html>
