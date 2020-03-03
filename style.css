@@ -4,6 +4,7 @@
 body{
     background-image: url("https://66.media.tumblr.com/bda991956401f7135565097b7651c4e3/tumblr_ouztgbH0CG1vj8v9mo2_1280.png");
     
+    
 }
 .header{
     display: flex;
@@ -16,9 +17,53 @@ img{
     width: 30vw;
 }
 .settings{
-    height: 250px;
-    background: rgba(75,89,58,0.4);    
-    border-radius: 66px;
+    height: 350px;
+    background: url("cloth_sett.png");
     font-size: 24px;
-
+    background-size: cover;
 }
+.Normal {
+    width: 900px;
+    height: 1300px;
+    z-index: 28;
+  }
+  .This_is_a_form_ {
+    font-size: 17px;
+    font-family: "KitschText-Extralight";
+    color: rgb(113, 106, 94);
+    line-height: 1.176;
+    text-align: left;
+    z-index: 27;
+  }
+  .Form_Inner {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(15, 12, 3);
+    opacity: 0.51;
+    width: 288px;
+    height: 41px;
+    z-index: 26;
+  }
+  .Form-out {
+    background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(0,0,0) 50%, rgb(255,255,255) 50%, rgb(255,255,255) 99%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(0,0,0) 50%, rgb(255,255,255) 50%, rgb(255,255,255) 99%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(0,0,0) 50%, rgb(255,255,255) 50%, rgb(255,255,255) 99%);
+    width: 293px;
+    height: 47px;
+    z-index: 25;
+  }
+  .Form-core {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(7, 6, 5);
+    background-image: -moz-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 50%, rgba(255,255,255,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 50%, rgba(255,255,255,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 50%, rgba(255,255,255,0) 100%);
+    opacity: 0.8;
+    width: 293px;
+    height: 47px;
+    z-index: 24;
+  }
+  
+

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'kingthings_exeterregular';
+    src: url('Kingthings_Exeter-webfont.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'KitschText-Extralight';
+    src: url('3B248B_0_0.eot');
+    src: url('3B248B_0_0.eot?#iefix') format('embedded-opentype'),
+    url('3B248B_0_0.woff2') format('woff2'),
+    url('3B248B_0_0.woff') format('woff'),
+    url('3B248B_0_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
