@@ -18,80 +18,173 @@ img{
     margin: auto;
     width: 30vw;
 }
+.back{
+  background-image: url("formback.png");
+}
+label.select{
+  float: left;
+  margin-top: 10px;
+  background-color: rgb(228, 92, 2);
+}
 .settings{
     box-sizing: border-box;
-    padding: 43px 50px;
-    height: 350px;
-    width: 1575px;
+    padding: 32px 50px;
+    height: 400px;
+    width: 1800px;
     background: url("settings-back.png");
     font-size: 24px;
     background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 .menu-text{
   font-family: 'Playfair Display SC', serif;
-  font-weight: 50;
+  font-weight: 35;
   letter-spacing: 1px;
   font-size: 15px;
   color: #fedcbd;
   text-align: center;
   margin: auto;
 }
-  .formbord {
-  display: inline-block;
-  box-sizing: border-box;
-  background-size: cover;
-  background-image: url("formback.png");
-  color: #fedcbd;
-  }
-  .formbord-input {
-    outline: none;
-    padding-left: 15px;
-    margin: 6px;
-    width: 380px;
-    height: 35px;
-    border-style: none;
-    background: -moz-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(175,129,102,0.3)), color-stop(15%, rgba(50,45,42,0.3)), color-stop(25%, rgba(50,45,42,0.3)), color-stop(79%, rgba(50,45,42,0.7)), color-stop(86%, rgba(50,45,42,0.7)), color-stop(100%, rgba(175,129,102,0.7)));
-    background: -webkit-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
-    background: -o-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
-    background: -ms-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
-    background: linear-gradient(to bottom, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8166', endColorstr='#af8166', GradientType=0 );
-    text-align: left;
-  }
-  .formbord-input:focus{
-    background: -moz-linear-gradient(top, rgba(175,129,102,0) 0%, rgba(50,45,42,0) 15%, rgba(50,45,42,0) 25%, rgba(50,45,42,0) 79%, rgba(50,45,42,0) 86%, rgba(175,129,102,0) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(175,129,102,0)), color-stop(15%, rgba(50,45,42,0)), color-stop(25%, rgba(50,45,42,0)), color-stop(79%, rgba(50,45,42,0)), color-stop(86%, rgba(50,45,42,0)), color-stop(100%, rgba(175,129,102,0)));
-    background: -webkit-linear-gradient(top, rgba(175,129,102,0) 0%, rgba(50,45,42,0) 15%, rgba(50,45,42,0) 25%, rgba(50,45,42,0) 79%, rgba(50,45,42,0) 86%, rgba(175,129,102,0) 100%);
-    background: -o-linear-gradient(top, rgba(175,129,102,0) 0%, rgba(50,45,42,0) 15%, rgba(50,45,42,0) 25%, rgba(50,45,42,0) 79%, rgba(50,45,42,0) 86%, rgba(175,129,102,0) 100%);
-    background: -ms-linear-gradient(top, rgba(175,129,102,0) 0%, rgba(50,45,42,0) 15%, rgba(50,45,42,0) 25%, rgba(50,45,42,0) 79%, rgba(50,45,42,0) 86%, rgba(175,129,102,0) 100%);
-    background: linear-gradient(to bottom, rgba(175,129,102,0) 0%, rgba(50,45,42,0) 15%, rgba(50,45,42,0) 25%, rgba(50,45,42,0) 79%, rgba(50,45,42,0) 86%, rgba(175,129,102,0) 100%);
- }
-
-  .button{
-    transition: 0.3s;
-    margin-left: 30px;
-    display: inline-block;  
-    background-image: url("button-style.png");
-    width: 136px;
-    height: 45px;
-  }
-
-.button-inner{
-    outline: none;
-    box-sizing: border-box;
-    width: 136px;
-    height: 45px;
-    background-color: rgba(255,255,255,0);
-    border-style: none;
-    color: rgb(197, 120, 32);
-}
+ 
 .button:hover{
-  transition: 0.2s;
+  transition: 0.1s;
   background-image: url("button-style-hover.png");
 }
 .button:active{
   background-image: url("button-style-activ.png");
+}
+.select input{
+  display: none;
+}
+.select{
+  display:inline-block;
+  width: 280px;
+  height: 34px;
+  line-height: 34px;
+  position: relative;
+}
+
+#text{
+  position: absolute;
+  display: block;
+  top: 0;
+  padding-left: 10px;
+}
+.select::before{
+  content: ">";
+  display: inline-block;
+  background: #2F2023;
+  position: absolute;
+  right: -36px;
+  top: -2px;
+  z-index: 2;
+  width: 32px;
+  height: 26px;
+  text-align: center;
+  padding-bottom: 10px;
+  line-height: 34px;
+  border: 1px solid #c6b8b8;
+  transform: rotate(90deg);
+  cursor: pointer;
+  font-size: 20px;
+}
+.select:hover::before{  
+  color: rgb(228, 92, 2);
+  font-weight: 900;
+}
+.select input[name="list"]:not(:checked) ~ #text{
+  color: rgb(109, 126, 117);
+}
+.select input[name="list"]:checked ~ #text{
+  background: transparent;
+  color: transparent;
+  z-index: 2;
+}
+#select:disabled ~ .items #text{
+  background: #000;
+}
+.items{
+  display: block;
+  min-height: 34px;
+  position: absolute;
+  overflow: hidden;
+  width: 280px;
+  cursor: pointer;
+  z-index: 3;
+}
+#select:not(:checked) ~ .items{
+  height: 34px;
+}
+.items label{
+  display: none;
+  padding-left: 10px;
+}
+#select:checked ~ .items{
+  padding-top: 34px;
+}
+#select:checked ~ .items label{
+  display: block;
+}
+.items label:hover{
+  color: rgb(197, 120, 32);
+  cursor: pointer;
+}
+.items input:checked+label{
+  display: block!important;
+  border: none;
+}
+#select:checked ~ .bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+div.search{
+  float: right;
+}
+.formbord {
+  display: inline-block;
+  box-sizing: border-box;
+  background-size: cover;
+  } 
+.formbord-input {
+  outline: none;
+  width: 380px;
+  height: 35px;
+  padding-left: 15px;
+  margin: 6px;
+  border-style: none;
+  background: -moz-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(175,129,102,0.3)), color-stop(15%, rgba(50,45,42,0.3)), color-stop(25%, rgba(50,45,42,0.3)), color-stop(79%, rgba(50,45,42,0.7)), color-stop(86%, rgba(50,45,42,0.7)), color-stop(100%, rgba(175,129,102,0.7)));
+  background: -webkit-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+  background: -o-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+  background: -ms-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+  background: linear-gradient(to bottom, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8166', endColorstr='#af8166', GradientType=0 );
+  text-align: left;
+  }
+.formbord-input:focus{
+    background: transparent;
+  }
+
+.button{
+  transition: 0.3s;
+  margin-left: 30px;
+  display: inline-block;  
+  background-image: url("button-style.png");
+  width: 136px;
+  height: 45px;
+}
+
+.button-inner{
+  outline: none;
+  box-sizing: border-box;
+  width: 136px;
+  height: 45px;
+  background-color: transparent;
+  border-style: none;
+  color: rgb(197, 120, 32);
 }
