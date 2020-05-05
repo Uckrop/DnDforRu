@@ -8,66 +8,17 @@
     <link  rel="icon"  href="https://img.icons8.com/color/40/000000/icosahedron.png" type="image/x-icon">
 </head>
 <body>
-    <div class="header">
-        <img src="Head.png" alt="Site title"> 
-    </div>
-   <section class="settings"> 
-        <label for="select" class="select menu-text back">
-                <!-- Этот инпут отвечает за закрытие селекта при клике за его пределами. Также этот инпут является стандартным значением нашего селекта -->
-            <input type="radio" name="list" value="not_changed" id="bg" checked />
-                <!-- Этот инпут является переключателем селекта в состояние "открыт" -->
-            <input type="radio" name="list" value="not_changed" id="select">
-                <!-- Этот лейбел используется для создания подложки, клик по которой приводит к закрытию селекта -->
-            <label class="bg" for="bg"></label>
-                <!-- Этот див - список параметров селекта, где #text - то, что выводится, когда ничего не выбрано -->
-            <div class="items back">
-                <input type="radio" name="list" value="first_value" id="list[0]">
-                <label for="list[0]">Варвар</label>
-
-                <input type="radio" name="list" value="second_value" id="list[1]">
-                <label for="list[1]">Бард</label>
-
-                <input type="radio" name="list" value="second_value" id="list[2]">
-                <label for="list[2]">Жрец</label>
-
-                <input type="radio" name="list" value="second_value" id="list[3]">
-                <label for="list[3]">Друид</label>
-
-                <input type="radio" name="list" value="second_value" id="list[4]">
-                <label for="list[4]">Воин</label>
-
-                <input type="radio" name="list" value="second_value" id="list[5]">
-                <label for="list[5]">Монах</label>
-
-                <input type="radio" name="list" value="second_value" id="list[6]">
-                <label for="list[6]">Паладин</label>
-
-                <input type="radio" name="list" value="second_value" id="list[7]">
-                <label for="list[7]">Рейнджер</label>
-
-                <input type="radio" name="list" value="second_value" id="list[8]">
-                <label for="list[8]">Вор</label>
-
-                <input type="radio" name="list" value="second_value" id="list[9]">
-                <label for="list[9]">Волшебник</label>
-
-                <input type="radio" name="list" value="second_value" id="list[10]">
-                <label for="list[10]">Чародей</label>
-                  <!-- Текст селекта по умолчанию. Выводится тогда, когда ничего не выбрано -->
-                  <span id="text">Выберите Класс...</span>
-            </div>
-        </label>
-        <div class="search">
-         <div class="formbord back"> 
-                <input type="text" name="spell-srch" id="ser" placeholder="Поиск по названию" class="formbord-input menu-text">
-         </div>
-        <div class="button">
-             <button type="submit" class="button-inner"> 
-                <h2 class="button-inner_text menu-text">Find Spell</h2>
-             </button>
-         </div>
+    <section>
+        <div class="header">
+            <img src="Head.png" alt="Site title"> 
         </div>
-        <!--<div class="selecter">
+    </section>
+   <section class="settings_back">
+     <section class = "settings">
+         <div class="back">
+             <input type="text" name="spell-srch" id="ser" placeholder="Поиск по названию" class="formbord-input menu-text">
+         </div>
+         <div class="selecter back">
             <select name="dnd-class" class="dndclass menu-text">
                 <option value="none" selected >Любой класс</option>    
                 <option value="barbarian"> Варвар </option>
@@ -82,6 +33,16 @@
                 <option value="wizard"> Волшебник </option>
                 <option value="sorcerer"> Чародей  </option>                      
             </select>
+        </div>
+    </section>
+     </section>
+        <!--div class="button">
+             <button type="submit" class="button-inner"> 
+                <h2 class="button-inner_text menu-text">Find Spell</h2>
+             </button>
+         </div>
+        </div>
+  
             <select name="spel-lvl menu-text">
                 <option value="none" selected >Любой уровень</option>     
                 <option value=0> 0 </option>
@@ -119,7 +80,7 @@
          </div>-->
        
        
-    </section>
+
     <section class="data-window"> 
     </section>
 </body>
