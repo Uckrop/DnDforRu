@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://use.fontawesome.com/7a9222f94f.js"></script>
     <link  rel="stylesheet" type="text/css"  href="/fonts/fonts.css" />  
     <title>DnD for Russian</title>
     <meta charset="UTF-8">
@@ -16,10 +17,10 @@
    <section class="settings_back">
      <section class = "settings">
          <div class="back">
-             <input type="text" name="spell-srch" id="ser" placeholder="Поиск по названию" class="formbord-input menu-text">
+             <input type="text" name="spell-srch" id="ser" placeholder="Поиск по названию" class="formbord-input menu_text">
          </div>
-         <div class="selecter back">
-            <select name="dnd-class" class="dndclass menu-text">
+         <div class="dndclass back menu_text">
+            <select name="dnd-class" class="menu_text">
                 <option value="none" selected >Любой класс</option>    
                 <option value="barbarian"> Варвар </option>
                 <option value="bard"> Бард </option>
@@ -33,9 +34,25 @@
                 <option value="wizard"> Волшебник </option>
                 <option value="sorcerer"> Чародей  </option>                      
             </select>
-        </div>
-    </section>
+       </div>
+       
+       <div class = "components">
+         <label for="comp">Компоненты:</label>
+         <br>
+            <input type="radio" value="with" id="with_radio" name="comp_radio" checked>
+            <label for="with_radio" class="comp_radio  menu_text"> Необходимы </label>
+         
+            <input type="radio" value="without" id="without_radio" name="comp_radio">
+            <label for="without_radio" class="comp_radio menu_text"> Исключить </label>
+         <br>
+         <label class = "comp_lebel"><input type="checkbox" name="comp" value="V" checked> V </label>
+         <label class = "comp_lebel"> <input type="checkbox" name="comp" value="M" checked> M </label>
+         <label class = "comp_lebel"><input type="checkbox" name="comp" value="S" checked> S </label>
+         <label class = "comp_lebel"><input type="checkbox" name="comp" value="F" checked> F/DF </label>
+         <label class = "comp_lebel"><input type="checkbox" name="comp" value="XP" checked> XP </label>
+      </div>
      </section>
+    </section>
         <!--div class="button">
              <button type="submit" class="button-inner"> 
                 <h2 class="button-inner_text menu-text">Find Spell</h2>

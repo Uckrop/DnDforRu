@@ -39,9 +39,9 @@ img{
   box-shadow: 0 0 10px rgba(0,0,0,1); /* Параметры тени */
 
 }
-.menu-text{
+.menu_text{
   font-family: 'Playfair Display SC', sans-serif;
-  font-weight: 20px;
+  font-weight: 700;
   letter-spacing: 0.3px;
   font-size: 15px;
   color: #fedcbd;
@@ -72,14 +72,12 @@ img{
   border-color: #5B3602;
   border-width: 2px;
   box-sizing:  content-box;
-
   background-color: #0f0c03;  
 }
 
 .formbord-input {
   outline: none;
   padding-left: 15px;
-  background: none;
   border-style: none;
   width: 25vw;
   height: 40px;
@@ -119,12 +117,71 @@ img{
   color: rgb(197, 120, 32);
 }
 
-.selecter{
-  display: inline-block;
-  
-}
 .dndclass{
-  height: 40px;
+  position: relative;
+  display: inline-block;
+}
+.dndclass select{
+  border: none;
+  padding-left: 12px;
+  box-sizing: content-box;
+  width: 220px;
+  height: 42px;
+   -webkit-appearance: none;
+   -moz-appearance:    none;
+  appearance:         none; 
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
   background: none;
+}
+.dndclass::before{
+  content: "\f103";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  pointer-events: none;
+  border-left: 2px solid #5B3602;
+  opacity: 0.6;
+
+}
+.dndclass select option{
+  padding: 100px;
+}
+.dndclass:hover::before{
+  transition: 0.4s;
+  opacity: 1;
+  background-color: rgba(175,129,102,0.3);
+  color: rgb(197, 120, 32);
+}
+
+.dndclass select:focus{
+  outline: none;
+  background-color: #110C01;
+}
+input[type=radio]{
+  visibility: hidden;
+}
+input[type=radio]:checked + label, label:checked{
+  color: brown;
   
 }
+input[type=radio]+label{
+position: relative;
+display: inline-block;
+background-color: cadetblue;
+width: 180px;
+padding: 15px 0 15px 0;
+text-align: center;
+  border-radius: 5px;
+  
+  
+	
+}
+
+
+
