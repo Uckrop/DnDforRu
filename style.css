@@ -75,6 +75,7 @@ img{
   background-color: #0f0c03;  
 }
 
+
 .formbord-input {
   outline: none;
   padding-left: 15px;
@@ -83,13 +84,7 @@ img{
   height: 40px;
   min-width: 250px;
   text-align: left;
-  background: -moz-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(175,129,102,0.3)), color-stop(15%, rgba(50,45,42,0.3)), color-stop(25%, rgba(50,45,42,0.3)), color-stop(79%, rgba(50,45,42,0.7)), color-stop(86%, rgba(50,45,42,0.7)), color-stop(100%, rgba(175,129,102,0.7)));
-  background: -webkit-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
-  background: -o-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
-  background: -ms-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
-  background: linear-gradient(to bottom, rgba(175,129,102,0.9) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.9) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8166', endColorstr='#af8166', GradientType=0 );
+ 
   }
 .formbord-input:hover{
   background-color: black;
@@ -164,24 +159,73 @@ img{
   background-color: #110C01;
 }
 input[type=radio]{
-  visibility: hidden;
+  display: none;
 }
-input[type=radio]:checked + label, label:checked{
-  color: brown;
-  
-}
+
+
 input[type=radio]+label{
-position: relative;
-display: inline-block;
-background-color: cadetblue;
-width: 180px;
-padding: 15px 0 15px 0;
-text-align: center;
-  border-radius: 5px;
-  
-  
-	
+  background-color: #0f0c03;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 140px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  box-sizing:content-box;
+  border: 1px solid #5B3602;
+  padding: 14px 0 14px 0;
+  transition: 0.3s;  
 }
 
+input[type=radio]:hover+label:after, label:hover:after{  
 
+}
 
+input[type=radio]:checked + label, label:checked{
+color: #EA9900  !important;
+}
+
+.gradient{
+  background: -moz-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(175,129,102,0.3)), color-stop(15%, rgba(50,45,42,0.3)), color-stop(25%, rgba(50,45,42,0.3)), color-stop(79%, rgba(50,45,42,0.7)), color-stop(86%, rgba(50,45,42,0.7)), color-stop(100%, rgba(175,129,102,0.7)));
+  background: -webkit-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+  background: -o-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+  background: -ms-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+  background: linear-gradient(to bottom, rgba(175,129,102,0.9) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8166', endColorstr='#af8166', GradientType=0 );  
+}
+
+input[type=radio]+label:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+ background: -moz-linear-gradient(top, rgba(175,129,102,0.3) 0%, rgba(50,45,42,0.3) 15%, rgba(50,45,42,0.3) 25%, rgba(50,45,42,0.3) 79%, rgba(50,45,42,0.3) 86%, rgba(175,129,102,0.3) 100%);
+ background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(175,129,102,0.9)), color-stop(25%, rgba(50,45,42,0.3)), color-stop(75%, rgba(50,45,42,0.0)),  color-stop(100%, rgba(175,129,102,0.9)));
+ background: -webkit-linear-gradient(top, rgba(175,129,102,0.9) 0%,  rgba(50,45,42,0) 25%, rgba(50,45,42,0) 75%, rgba(175,129,102,0.9) 100%);
+background: -o-linear-gradient(top, rgba(175,129,102,0.9) 0%,  rgba(50,45,42,0) 25%, rgba(50,45,42,0) 75%, rgba(175,129,102,0.9) 100%);
+background: -ms-linear-gradient(top, rgba(175,129,102,0.9) 0%,  rgba(50,45,42,0) 25%, rgba(50,45,42,0) 75%, rgba(175,129,102,0.9) 100%);
+background: linear-gradient(to bottom, rgba(175,129,102,0.9) 0%,  15%, rgba(50,45,42,0) 25%,  rgba(50,45,42,0) 75%, rgba(175,129,102,0.9) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8166', endColorstr='#af8166', GradientType=0 );   
+border-radius: 10px;
+transition: opacity 0.3s ease-in-out;
+opacity: 0.3;
+}
+
+input[type=radio]:hover+label{
+color:  rgb(197, 120, 32);
+}
+
+input[type=radio]:hover+label:after, input[type=radio]:checked+label:after{
+opacity: 0.7;
+}
+
+input[type=radio]:active +label, input[type=radio]:active+label:after{
+color: wheat;
+opacity: 1;
+transition: 0.1s;
+}
