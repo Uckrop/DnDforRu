@@ -9,10 +9,8 @@
     <link  rel="icon"  href="https://img.icons8.com/color/40/000000/icosahedron.png" type="image/x-icon">
 </head>
 <body>
-    <section>
-        <div class="header">
+    <section class="header">
             <img src="Head.png" alt="Site title"> 
-        </div>
     </section>
    <section class="settings_back">
      <section class = "settings">
@@ -35,7 +33,7 @@
                 <option value="sorcerer"> Чародей  </option>                      
             </select>
        </div>
-       
+      
        <div class = "components">
          <label for="comp">Компоненты:</label>
          <br>
@@ -46,11 +44,15 @@
             <label for="without_radio" class=" menu_text"> Исключить </label>
 
          <br>
-         <label class = "comp_lebel"><input type="checkbox" name="comp" value="V" checked> V </label>
-         <label class = "comp_lebel"> <input type="checkbox" name="comp" value="M" checked> M </label>
-         <label class = "comp_lebel"><input type="checkbox" name="comp" value="S" checked> S </label>
-         <label class = "comp_lebel"><input type="checkbox" name="comp" value="F" checked> F/DF </label>
-         <label class = "comp_lebel"><input type="checkbox" name="comp" value="XP" checked> XP </label>
+         
+         <div class = "comp_block">
+         <input type="checkbox" id="V" value="V" class="comp_i" checked><label class="comp" for="V"> V </label>
+         <input type="checkbox" id="M" value="M" class="comp_i" checked><label class="comp" for="M"> M </label>
+         <input type="checkbox" id="S" value="S" class="comp_i" checked><label class="comp" for="S"> S </label>
+         <input type="checkbox" id="F" value="F" class="comp_i" checked><label class="comp" for="F"> F/DF </label>
+         <input type="checkbox" id="XP" value="XP" class="comp_i" checked><label class="comp" for="XP"> XP </label>
+        
+         </div>
       </div>
      </section>
     </section>
