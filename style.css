@@ -4,10 +4,23 @@
     margin: 0;
     display: inline-block;
 }
+title{
+  display: none;
+}
 body{
-    background-image: url("body_back.jpg");
-    
-    
+  width: 100vw;
+    background-image: url("body_back.jpg");  
+}
+
+.settings_back{
+  width: 100vw;
+  height: 68vh;
+  box-sizing: border-box; 
+  background-image: url("dndback1.png");
+  font-size: 24px;
+  background-size: cover;
+  align-items: center;
+  margin-top: -20px;
 }
 .header{
     display: flex;
@@ -18,22 +31,11 @@ img{
     margin: auto;
     width: 30vw;
 }
-.settings_back{
-  width: 100vw;
-  height: 50vh;
-  box-sizing: border-box; 
-  background-image: url("dndback1.png");
-  font-size: 24px;
-  background-size: cover;
-  align-items: center;
-  margin: 20px auto;
-  padding-top: 2vh;
-}
 .settings{
   display: block;
   box-sizing: border-box;
-  width: 60vw;
-  height: 46vh;
+  width: 70vw;
+  height: 50vh;
   margin: auto;
   padding: 3vh 2vw;
   background-color: #EBDBC4;
@@ -77,12 +79,11 @@ img{
   align-self: auto;
 }
 
-
 .formbord-input {
   outline: none;
   padding-left: 15px;
   border-style: none;
-  width: 25vw;
+  width: 40vw;
   height: 40px;
   min-width: 250px;
   text-align: left;
@@ -115,9 +116,10 @@ img{
 }
 
 .dndclass{
+  margin-top: 20px;
   position: relative;
   display: inline-block;
-    box-shadow: 1px 2px 10px #3b2301;
+  box-shadow: 1px 2px 10px #3b2301;
 }
 .dndclass select{
   border: none;
