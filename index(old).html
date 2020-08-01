@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head style="display: none">
+<head>
     <script src="https://use.fontawesome.com/7a9222f94f.js"></script>
     <link  rel="stylesheet" type="text/css"  href="/fonts/fonts.css" />  
     <title>DnD for Russian</title>
@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <link  rel="icon"  href="https://img.icons8.com/color/40/000000/icosahedron.png" type="image/x-icon">
 </head>
-  
+
 <body>
-  <div class="menubar">
-    <div class="back">
+   <section class="settings_back">     
+   <div class="header">
+        <img src="Head.png" alt="Site title"> 
+   </div>
+  
+   <section class = "settings">
+     
+     <div style="display: block">
+     <div class="back">
       <input type="text" name="spell-srch" id="ser"
              placeholder="Поиск по названию" 
              class="formbord-input menu_text gradient">
      </div>
+     </div>
+     <span class="selerors">
      <div class="scroles">
      <div class="dndclass back menu_text">
         <select name="dnd-class" class="menu_text">
@@ -49,21 +58,67 @@
             </select>                     
      </div>  
     </div>
-    <div class="comp_selector menu_text">
-      <lable class="selector">Компоненты: </lable>
+    <div class="comp_block">
+      <h3>Компоненты:</h3>
+      <div class="comp_button">
+      <input type="radio" value="with" id="with_radio" name="comp_radio" checked>
+      <label for="with_radio" class="menu_text"> Необходим </label>
+      <input type="radio" value="without" id="without_radio" name="comp_radio">
+      <label for="without_radio" class=" menu_text"> Исключить </label>
+      </div>
+      <div class="comp_selector">
          <input type="checkbox" id="V" value="V" class="comp_i" checked><label class="comp" for="V"> V </label>
          <input type="checkbox" id="M" value="M" class="comp_i" checked><label class="comp" for="M"> M </label>
          <input type="checkbox" id="S" value="S" class="comp_i" checked><label class="comp" for="S"> S </label>
          <input type="checkbox" id="F" value="F" class="comp_i" checked><label class="comp" for="F"> F/DF </label>
          <input type="checkbox" id="XP" value="XP" class="comp_i" checked><label class="comp" for="XP"> XP </label>
-   </div> 
-   <button type="submit" class="button back"> 
-      <h2 class="button-inner_text menu-text">Find Spell</h2>
-   </button>
-      
-  </div>
-    
+      </div>
+     </div> 
+        <div class="button">
+             <button type="submit" class="button-inner"> 
+                <h2 class="button-inner_text menu-text">Find Spell</h2>
+             </button>
+         </div>
+       </span>    
+     
+   </section>
+     
+    </section>
+        <!--div class="button">
+             <button type="submit" class="button-inner"> 
+                <h2 class="button-inner_text menu-text">Find Spell</h2>
+             </button>
+         </div>
+        </div>
   
+           
+        </div>
+        <div>
+             <label for="components">Компоненты:</label>
+             <br>
+             <input type="radio" value="with" name="comp-radio" checked> Может требовать
+              <input type="radio" value="without" name="comp-radio"> Исключить
+             <br>
+             <input type="checkbox" name="components" value="V" checked>V
+             <input type="checkbox" name="components" value="M" checked>M
+             <input type="checkbox" name="components" value="S" checked>S
+             <input type="checkbox" name="components" value="F" checked>F/DF
+             <input type="checkbox" name="components" value="XP" checked>XP
+         </div>
+         <!--<div>
+             <label for="school">Школы:</label>
+             <br>
+             <input type="checkbox" name="school" value="V" checked>V
+             <input type="checkbox" name="school" value="M" checked>M
+             <input type="checkbox" name="school" value="S" checked>S
+             <input type="checkbox" name="school" value="F" checked>F/DF
+             <input type="checkbox" name="school" value="XP" checked>XP
+         </div>-->
+       
+       
+
+    <section class="data-window"> 
+    </section>
 </body>
 
 </html>
